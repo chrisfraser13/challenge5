@@ -28,9 +28,7 @@ $(document).ready(function () {
             console.log( blockHour, currentHour)
 
             if (blockHour < currentHour) {
-                $(this).removeClass("past");
-                $(this).addClass("present");
-                $(this).removeClass("future");
+                $(this).addClass("past");
             }
             else  if (blockHour === currentHour) {
                 $(this).removeClass("past");
@@ -39,8 +37,8 @@ $(document).ready(function () {
             }
             else {
                 $(this).removeClass("past");
-                $(this).addClass("present");
-                $(this).removeClass("future");
+                $(this).addClass("future");
+                $(this).removeClass("present");
             }
         })
     }
